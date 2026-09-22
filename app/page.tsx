@@ -1,3 +1,5 @@
+import HeroScene from "./components/HeroScene";
+
 const Arrow = () => <span aria-hidden="true">↗</span>;
 
 const skills = [
@@ -42,6 +44,9 @@ export default function Home() {
       </header>
 
       <section className="hero" id="inicio">
+        <div className="hero-art" aria-hidden="true">
+          <HeroScene />
+        </div>
         <div className="hero-orbit" aria-hidden="true"><i /><i /><i /></div>
         <div className="hero-copy">
           <p className="eyebrow"><span /> Fullstack developer · Campina Grande, PB</p>
