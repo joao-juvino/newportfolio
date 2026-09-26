@@ -1,12 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Icon from "./Icon";
-const links = [
-  ["Projetos", "projetos"],
-  ["Sobre", "sobre"],
-  ["Competências", "competencias"],
-  ["Contato", "contato"],
-];
+import { navigation, contacts } from "../data/portfolio";
 export function Brand() {
   return (
     <a className="brand" href="#inicio" aria-label="João Santos, início">
@@ -35,14 +30,14 @@ export default function Header() {
     <header className="site-header container-shell" id="inicio">
       <Brand />
       <nav className="desktop-nav" aria-label="Navegação principal">
-        {links.map(([label, id]) => (
+        {navigation.map(([label, id]) => (
           <a key={id} href={`#${id}`}>
             {label}
           </a>
         ))}
       </nav>
-      <a className="button header-cta" href="#contato">
-        Vamos conversar <Icon name="arrow" />
+      <a className="button header-cta" href={contacts.resume}>
+        Ver meu currículo <Icon name="download" />
       </a>
       <button
         ref={button}
@@ -60,12 +55,15 @@ export default function Header() {
         aria-label="Navegação móvel"
         hidden={!open}
       >
-        {links.map(([label, id]) => (
+        {navigation.map(([label, id]) => (
           <a key={id} href={`#${id}`} onClick={() => setOpen(false)}>
             {label}
             <Icon name="arrow" />
           </a>
         ))}
+        <a href={contacts.resume}>
+          Ver meu currículo <Icon name="download" />
+        </a>
       </nav>
     </header>
   );

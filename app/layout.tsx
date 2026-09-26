@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "João Santos — Engenheiro de Software Fullstack",
+  title: "João Santos — Engenheiro de Software",
   description:
-    "Portfólio de João Santos, desenvolvedor fullstack com atuação em APIs, interfaces web, cloud e automação de deploy.",
+    "João Santos, Engenheiro de Software com experiência em backend, APIs, integrações e sistemas distribuídos. Projetos, trajetória e competências.",
   icons: { icon: "/favicon.svg" },
 };
 

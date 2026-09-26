@@ -4,3 +4,4 @@ out
 .sites-runtime
 .pnpm-store
 tmp
+*.tsbuildinfo

@@ -53,9 +53,10 @@ export function HeroTitle() {
   }, [reduced, animate]);
   return (
     <h1 ref={scope} id="hero-title">
-      <span className="title-line">Olá, sou</span>
+      <span className="title-line">Transformo</span>
+      <span className="title-line">ideias em</span>
       <span className="title-line name">
-        João Santos<span className="title-period">.</span>
+        produtos reais<span className="title-period">.</span>
       </span>
     </h1>
   );

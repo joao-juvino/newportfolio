@@ -14,8 +14,43 @@ export type IconName =
   | "education"
   | "menu"
   | "close"
-  | "server";
+  | "server"
+  | "download"
+  | "architecture"
+  | "queue"
+  | "globe"
+  | "building";
 const paths: Record<IconName, React.ReactNode> = {
+  download: (
+    <>
+      <path d="M12 3v12m-4-4 4 4 4-4M4 16v5h16v-5" />
+    </>
+  ),
+  architecture: (
+    <>
+      <rect x="9" y="2" width="6" height="6" rx="1" />
+      <rect x="2" y="16" width="6" height="6" rx="1" />
+      <rect x="16" y="16" width="6" height="6" rx="1" />
+      <path d="M12 8v4M5 16v-4h14v4" />
+    </>
+  ),
+  queue: (
+    <>
+      <path d="M4 4v16M20 4v16M4 8h16M4 16h16M8 5l3 3-3 3m6 2 3 3-3 3" />
+    </>
+  ),
+  globe: (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <ellipse cx="12" cy="12" rx="4" ry="9" />
+      <path d="M3 12h18M5 6h14M5 18h14" />
+    </>
+  ),
+  building: (
+    <>
+      <path d="m3 21 1-13 8-5 8 5 1 13H3Zm6 0V11h6v10M1 8l11-7 11 7M12 11v10" />
+    </>
+  ),
   arrow: (
     <>
       <path d="M4 12h15M13 5l7 7-7 7" />
